@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Calculadora triste</title>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+    <div class="container w-50 justify-content-center text-center my-5">
+      <div class="row my-4">
+        <div class="col-sm input-group">
+          <label class="input-group-text" for="num1">Introduce un número</label>
+          <input class="form-control" name="num1" id="num1" type="number" />
+        </div>
+        <div class="col-sm input-group">
+          <label class="input-group-text" for="num2">Introduce el segundo número</label>
+          <input class="form-control" name="num2" id="num2" type="number" />
+        </div>
+      </div>
+
+       <div class="row my-4 text-center">
+        <div class="btn-group-sm">
+          <button id="btn-sumar" class="btn btn-dark">Suma</button>
+          <button id="btn-restar" class="btn btn-dark">
+            Resta
+          </button>
+          <button id="btn-multiplicar" class="btn btn-dark">
+            Multiplicación
+          </button>
+          <button id="btn-dividir" class="btn btn-dark">
+            División
+          </button>
+        </div>
+      </div>
+      <div class="fs-4">
+        <p>  Resultado: <span id="resultado"></span></p>
+      </div>
+    </div>
+    <script src="./lib/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
